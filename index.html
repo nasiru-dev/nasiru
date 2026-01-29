@@ -1,21 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My ML Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasiru | ML Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 2em; }
-        h1 { color: #2c3e50; }
-        .project { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        .contact-section {
+    text-align: center;
+    padding: 3rem 0;
+    border-top: 1px solid #334155;
+    margin-top: 4rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--text-dim);
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+    transform: scale(1.2);
+}
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+            --accent: #38bdf8;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--accent); }
+        .subtitle { color: var(--text-dim); font-size: 1.2rem; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .card h3 { margin-top: 0; color: var(--accent); }
+        .card p { color: var(--text-dim); font-size: 0.95rem; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: var(--accent);
+            color: var(--bg);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        
+
+        footer { text-align: center; padding: 4rem; color: var(--text-dim); font-size: 0.8rem; }
     </style>
 </head>
 <body>
-    <h1>Data Science Portfolio</h1>
-    <p>Welcome! Here are some of my Machine Learning implementations.</p>
-    
-    <div class="project">
-        <h3>Linear Regression</h3>
-        <p>Predicting house prices using the King County dataset.</p>
-        <a href="https://github.com/nasiru-dev/nasiru/blob/master/linear_Regression.ipynb">View Notebook</a>
-    </div>
+
+<header>
+    <h1>Nasiru Dev</h1>
+    <p class="subtitle">Machine Learning Engineer & Data Enthusiast</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Featured Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Linear Regression</h3>
+                <p>Analyzing the King County housing market to predict property values with 85%+ accuracy.</p>
+                <a href="linear_Regression.ipynb" class="btn">View Notebook</a>
+            </div>
+
+            <div class="card">
+                <h3>Logistic Regression</h3>
+                <p>Classification model built to detect patterns in cancer data for early diagnostic support.</p>
+                <a href="logistic_Regression.ipynb" class="btn">View Notebook</a>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="container">
+    <section class="contact-section">
+        <h2>Get In Touch</h2>
+        <p class="subtitle">Looking for collaborations or have a question about my ML models?</p>
+        
+        <div class="social-links">
+            <a href="https://linkedin.com/in/muhammad-nasiru-suleman" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            
+            <a href="https://github.com/nasiru-dev" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            
+            <a href="mailto:nasirusyntax@gmail.com" title="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Nasiru Dev • Built with Git & GitHub Pages
+</footer>
+
 </body>
 </html>
