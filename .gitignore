@@ -1,0 +1,11 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (optional, but recommended for large files)
+*.csv
+*.json
+*.xlsx
+
+# Python bytecode
+__pycache__/
+*.pyc
