@@ -1,17 +1,18 @@
-# Nasiru – Data Science Projects
+# Machine Learning Projects
 
-This repository contains a collection of **data science and machine learning** projects implemented in Jupyter notebooks. It focuses on practical regression models, exploratory data analysis, and working with real-world datasets.
+This repository contains my implementations of various machine learning algorithms.
 
-## Repository structure
+## 🚀 Projects Included
+* **Linear Regression:** Predicting house prices using the `kc_house_data.csv`.
+* **Logistic Regression:** Classification tasks using `Cancer_Data.csv`.
 
-- `linear_Regression.ipynb` – Implementation of linear regression on real datasets, including data cleaning, feature engineering, model training, and evaluation.
-- `logistic_Regression.ipynb` – Binary classification using logistic regression, with preprocessing, model fitting, and performance metrics.
-- `Cancer_Data.csv` – Sample dataset used for classification and regression experiments.
-- `kc_house_data.csv` – Housing dataset used for price prediction and regression exercises.
+## 🛠️ Requirements
+To run these notebooks, you'll need:
+* Python 3.x
+* Jupyter Notebook / Lab
+* Pandas, NumPy, Scikit-learn
 
-## Getting started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/nasiru-dev/nasiru.git
-   cd nasiru
+## 📈 Usage
+1. Clone the repository.
+2. Open the `.ipynb` files in Jupyter.
+3. Run the cells to see the model training and results.
